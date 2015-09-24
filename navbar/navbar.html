@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="./navbar.css">
+</head>
+<body>
+	<div class="ui-navbar" > 
+		<div class="ui-navbar-main"> 
+			<div class="ui-navbar-title">
+				<span>开放API</span>
+			</div>
+				<div class=ui-navbar-item )>
+					<div class="ui-navbar-item-title">
+						<span >介绍</span>
+						<i class="ui-navbar-iconfont-xia">&#xe60d;</i>
+					</div>
+					<div  id=a0 class="ui-navbar-item-list" > 
+						<li class="ui-navbar-item-list-li onSelected">使用开放API</li> 
+						<li class="ui-navbar-item-list-li">访问频率限制</li> 
+						<li class="ui-navbar-item-list-li">返回错误码说明</li> 
+					</div>
+				</div>
+				<div class=ui-navbar-item >
+					<div class="ui-navbar-item-title">
+						<span >获取授权</span>
+						<i class="ui-navbar-iconfont-xia">&#xe60d;</i>
+					</div>
+					<div  id=a1 class="ui-navbar-item-list"> 
+						<li class="ui-navbar-item-list-li onSelected">开放应用授权</li> 
+						<li class="ui-navbar-item-list-li">私有应用授权</li> 
+					</div>
+				</div>
+				<div class=ui-navbar-item>
+					<div class="ui-navbar-item-title">
+						<span >Webhook</span>
+						<i class="ui-navbar-iconfont-xia">&#xe60d;</i>
+					</div>
+					<div id=a2 class="ui-navbar-item-list"> 
+						<li class="ui-navbar-item-list-li onSelected">Webhook介绍</li> 
+					</div>
+				</div>
+				<div class=ui-navbar-item >
+					<div class="ui-navbar-item-title">
+						<span >API文档</span>
+						<i class="ui-navbar-iconfont-xia">&#xe60d;</i>
+					</div>
+					<div id=a3 class="ui-navbar-item-list"> 
+						<li class="ui-navbar-item-list-li onSelected">Shop</li> 
+						<li class="ui-navbar-item-list-li">Metafields</li> 
+						<li class="ui-navbar-item-list-li">Customer</li> 
+						<li class="ui-navbar-item-list-li">CustomerAddress</li> 
+						<li class="ui-navbar-item-list-li">Account</li> 
+						<li class="ui-navbar-item-list-li">Product</li> 
+						<li class="ui-navbar-item-list-li">ProductVariant</li> 
+						<li class="ui-navbar-item-list-li">Theme</li> 
+						<li class="ui-navbar-item-list-li">Asset</li> 
+						<li class="ui-navbar-item-list-li">Country</li> 
+						<li class="ui-navbar-item-list-li">Province</li> 
+						<li class="ui-navbar-item-list-li">City</li> 
+						<li class="ui-navbar-item-list-li">District</li> 
+						<li class="ui-navbar-item-list-li">ScriptTag</li> 
+						<li class="ui-navbar-item-list-li">Order</li> 
+						<li class="ui-navbar-item-list-li">Shipment</li> 
+						<li class="ui-navbar-item-list-li">ShipmentSupplier</li> 
+						<li class="ui-navbar-item-list-li">PaymentMethod</li> 
+						<li class="ui-navbar-item-list-li">Redirect</li> 
+						<li class="ui-navbar-item-list-li">Page</li> 
+						<li class="ui-navbar-item-list-li">Webhook</li> 
+						<li class="ui-navbar-item-list-li">OpenPayment</li> 
+					</div>
+				</div>
+				<div class=ui-navbar-item >
+					<div class="ui-navbar-item-title">
+						<span >开放支付</span>
+						<i class="ui-navbar-iconfont-xia">&#xe60d;</i>
+					</div>
+					<div id=a4 class="ui-navbar-item-list" > 
+						<li class="ui-navbar-item-list-li onSelected">开放支付</li> 
+					</div>
+				</div>
+		</div> 
+	</div> 
+	<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.js"></script>
+	<script type="text/javascript">
+
+	$(function(){
+		$(".ui-navbar-item").on('click', function () {
+
+			$(this).addClass('onSelected').siblings().removeClass("onSelected");
+		})
+	})
+	$(function(){
+		$(".ui-navbar-item-list-li").on('click', function () {
+			$(this).addClass('onSelected').siblings().removeClass("onSelected"); 
+		})
+	})
+	</script>
+</body>
+</html>
+
