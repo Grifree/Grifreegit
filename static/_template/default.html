@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%- config.title %></title>
+    <link rel="stylesheet" href="/lib/base.scss">
+    <script src="/lib/base.js"></script>
+    <script src="/lib/config.js"></script>
+    <link rel="stylesheet" href="/static/github.css">
+    <style>
+    body {
+        padding-left:10px;
+        padding-right:10px;
+    }
+    </style>
+</head>
+<body>
+    <%- include("/nav.md"); %>
+    <hr>
+    <%- content %>
+</body>
+</html>

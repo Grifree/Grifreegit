@@ -1,0 +1,7 @@
+{
+    "scripts": {
+        "fms": "supervisor -w fms.js fms.js",
+        "fis": "fis3 release debug -wL -d ./output",
+        "build": "fis3 release -d ./output"
+    }
+}
