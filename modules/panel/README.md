@@ -5,7 +5,7 @@
 
 
 ````html
-<script src="https://cdn.bootcss.com/handlebars.js/4.0.4/handlebars.js"></script>
+
 <!-- 容器 -->
 <div class="p-panel p-panel-bgcolor0" id="fonttag">
     <!--     <div class="p-panel-item  p-panel-lower">
@@ -41,55 +41,65 @@
             <div class="p-panel-item-content">7</div>
         </div> -->
 </div>
+
 <!-- 模板 -->
 <script type="text/template" id="fonttpl">
     {{#each fontjson}}
         <div class="p-panel-item">
-            <div class="p-panel-item-head p-panel-bgcolor1">{{title}}</div>
+            <div class="p-panel-item-head p-panel-bgcolor{{color}}">{{title}}</div>
             <div class="p-panel-item-content  p-panel-{{change}}">{{data}}</div>
         </div>
     {{/each}}
 </script>
+
 <!-- 数据源 -->
 <script type="text/template" id="fontjson">
     {
         "fontjson":[
             {
+                "color":"1",
                 "title":"今日新增用户数",
                 "data":"1111111111111111",
                 "change":"lower"
             },
             {
+                "color":"2",
                 "title":"当月用户数",
                 "data":"99999999999999",
                 "change":"up"
             },
             {
+                "color":"3",
                 "title":"总用户数",
                 "data":"222222222222",
                 "change":"up"
             },
             {
+                "color":"4",
                 "title":"今日新增任务数",
                 "data":"3333333333",
                 "change":"lower"
             },
             {
+                "color":"5",
                 "title":"总任务数",
                 "data":"44444444",
                 "change":"lower"
             },
             {
+                "color":"6",
                 "title":"任务提交邮址数",
                 "data":"55555",
                 "change":"lower"
             },
             {
+                "color":"7",
                 "title":"任务发送邮址数",
                 "data":"666",
                 "change":"up"
             },
             {
+                "color":"8",
                 "title":"免费发送邮址数",
                 "data":"7",
                 "change":"lower"

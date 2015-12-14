@@ -17,11 +17,6 @@
     line-height: 238px;
     vertical-align: middle;
 }
-// .p-panel-font-big{
-//     font-size: 60px;
-// }.p-panel-font-small{
-//     font-size: 30px;
-// }
 .p-panel-item-content{
     display: inline-block;
     white-space: nowrap;
@@ -38,7 +33,7 @@
     line-height: 40px;
 }
 .p-panel-lower:after{
-    content: "\e613";
+    content: "\e610";
     color: #cb4e52;
 }.p-panel-up:after{
     content: "\614";
