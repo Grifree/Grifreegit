@@ -1,0 +1,29 @@
+.tab{
+	width: 1024px;
+	margin: 0 auto;
+	background-color: gray;
+}
+.tab-head{
+	display: inline-block;
+	margin-right: 20px;
+	color: blue;
+	cursor: pointer;
+}
+.tab-main{
+	display: none;
+	width: 100%;
+	border-top:1px dashed black;
+}
+.tab-head-on{
+	color: black;
+	border:1px solid black;
+}
+.tab-main-on{
+	display: block;
+}
+
+
+.ui-tab-active{
+	background-color: red !important;
+	color: white;
+}
